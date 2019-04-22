@@ -13,12 +13,18 @@
 
 <body>
     <!-- main header -->
+    
     <header class="container-fluid text-center">
         <div class="main-header">
             <h1 class="header-name">Destination Planner</h1>
         </div>
     </header>
-    <div class="container-fluid">
+    
+    <!-- choose city, points of interest & results sections -->
+    
+    <!-- choose city -->
+    
+    <article class="container-fluid">
         <div class="row">
             <div class="col-sm-4 text-center">
                 <h2 class="destination">Choose City:</h2>
@@ -26,6 +32,9 @@
                     <input id="autocomplete" placeholder="Enter a city" type="text" />
                 </div>
             </div>
+            
+            <!-- points of interest -->
+            
             <section class="col-sm-4 text-center">
                 <h2 class="poi">Points of Interest:</h2>
                 <div id="poibuttons">
@@ -37,6 +46,9 @@
                     <button id="button" type="button" class="btn btn-primary">Start Over</button>
                 </div>
             </section>
+            
+            <!-- results -->
+            
             <section class="col-sm-4 text-center">
                 <div class="results">
                     <h2 class="results">Results:</h2>
@@ -75,7 +87,10 @@
                 </div>
             </section>
         </div>
-    </div>
+    </article>
+    
+    <!-- map container -->
+    
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
