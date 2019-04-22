@@ -5,9 +5,13 @@ html,body {
     font-family: 'Orbitron', sans-serif;
 }
 
+/* header name sections */
+
 h2 {
     margin-bottom: 50px;
 }
+
+/* city autocomplete text box area */
 
 .destination {
     margin-left: 20px;
@@ -20,6 +24,8 @@ h2 {
     display: flex;
     text-align: center;
 }
+
+/* points of interest area */
 
 #button {
     margin-left: 30px;
@@ -43,6 +49,8 @@ form {
     width: 100%;
 }
 
+/* results area */
+
 #resultsdropdown {
     margin: 20px;
     max-width: 100%
@@ -53,7 +61,6 @@ form {
   width: 100%;
   height: 298px;
   overflow: auto;
-  /*left: 442px;*/
   top: 70px;
   cursor: pointer;
   overflow-x: hidden;
@@ -87,6 +94,8 @@ form {
 .iw_table_icon {
   text-align: right;
 }
+
+/* map area */
 
 #map {
     width: 100%;
