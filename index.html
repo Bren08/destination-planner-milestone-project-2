@@ -12,10 +12,21 @@
 </head>
 
 <body>
-    <div class="container-fluid text-center">
-        <header class="main-header">
+    <!-- main header -->
+    <header class="container-fluid text-center">
+        <div class="main-header">
             <h1 class="header-name">Destination Planner</h1>
-        </header>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <h2 class="destination">Choose City:</h2>
+                <div class="cityselection">
+                    <input id="autocomplete" placeholder="Enter a city" type="text" />
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -23,4 +34,3 @@
 </body>
 
 </html>
-
