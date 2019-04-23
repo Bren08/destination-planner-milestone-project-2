@@ -33,11 +33,6 @@
                 <div class="cityselection">
                     <input id="autocomplete" placeholder="Enter a city" type="text" />
                 </div>
-            </div>
-
-            <!-- points of interest -->
-
-            <section class="col-sm-4 text-center">
                 <h2 class="poi">Points of Interest:</h2>
                 <div id="poibuttons">
                     <form>
@@ -47,11 +42,17 @@
                     </form>
                     <button id="button" type="button" class="btn btn-primary" onclick="reset()">Start Over</button>
                 </div>
+            </div>
+
+            <!-- points of interest -->
+
+            <section class="col-sm-4 text-center">
+                <div id="map"></div>
             </section>
 
             <!-- results -->
 
-            <section class="col-sm-4 text-center">
+            <section class="col-sm-4">
                 <div class="results">
                     <h2 class="results">Results:</h2>
                 </div>
@@ -96,7 +97,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <div id="map"></div>
+                
             </div>
         </div>
     </div>
