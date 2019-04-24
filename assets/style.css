@@ -1,46 +1,75 @@
-html,body {
+html,
+body {
     height: 100%;
     margin: 0px;
     padding: 0px;
     font-family: 'Orbitron', sans-serif;
+    background-color: #668cff14;
 }
+
+
+
+container-fluid {
+    padding: 0px;
+    margin: 0px;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+row {
+  order: 1;
+}
+
 
 /* header name sections */
 
 h2 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+#main-header {
+    margin: 20px;
 }
 
 /* city autocomplete text box area */
 
 .destination {
-    margin-left: 20px;
+    margin-top: 5px;
+    
 }
 
 #autocomplete {
     width: 220px;
-    margin-top: 25px;
-    margin-left: 135px;
-    display: flex;
     text-align: center;
 }
 
 /* points of interest area */
 
+a {
+    width: 100%;
+    
+}
+
 #button {
-    margin-left: 30px;
+    /*margin-left: 30px;*/
     margin-bottom: 20px;
 }
 
 #poibuttons {
     margin: 20px;
-    line-height: 3;
+    line-height: 2;
     font-size: 15px;
+    text-align: center;
 }
 
+#poi-return {
+    width: 250px;
+    margin-bottom: 10px;
+}
 .btn {
     border-radius: 10px;
     font-size: 15px;
+    width: 100%;
 }
 
 form {
@@ -49,7 +78,16 @@ form {
     width: 100%;
 }
 
+.col-sm-12 {
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* results area */
+
+table {
+    width: 100%;
+}
 
 #resultsdropdown {
     margin: 20px;
@@ -57,48 +95,73 @@ form {
 }
 
 #listing {
-  position: initial;
-  width: 100%;
-  height: 298px;
-  overflow: auto;
-  top: 70px;
-  cursor: pointer;
-  overflow-x: hidden;
+    position: initial;
+    width: 100%;
+    height: 245px;
+    overflow: auto;
+    top: 70px;
+    cursor: pointer;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .placeIcon {
-  width: 20px;
-  height: 34px;
-  margin: 4px;
+    width: 20px;
+    height: 34px;
+    margin: 4px;
 }
 
 .hotelIcon {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 }
 
 #rating {
-  font-size: 13px;
-  font-family: Arial Unicode MS;
+    font-size: 13px;
+    font-family: Arial Unicode MS;
 }
 
 .iw_table_row {
-  height: 18px;
+    height: 18px;
 }
 
 .iw_attribute_name {
-  font-weight: bold;
-  text-align: right;
+    font-weight: bold;
+    text-align: right;
 }
 
 .iw_table_icon {
-  text-align: right;
+    text-align: right;
 }
 
 /* map area */
 
 #map {
     width: 100%;
-    height: 46vh;
+    height: 80vh;
     text-align: center;
+}
+
+@media (max-width: 375px) {
+    #map {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 992px) {
+    form {
+        font-size: 10px;
+    }
+}
+ @media (min-width: 992px) {
+     #map {
+         height: 88vh;
+     }
+ }   
+
+@media (min-width: 768px) {
+    #poi-return {
+        display: none;
+    }
 }
