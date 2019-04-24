@@ -17,7 +17,7 @@
     <!-- main header -->
 
     <header class="container-fluid text-center">
-        <div class="main-header">
+        <div id="main-header">
             <h1 class="header-name">Destination Planner</h1>
         </div>
     </header>
@@ -36,23 +36,12 @@
                 <h2 class="poi">Points of Interest:</h2>
                 <div id="poibuttons">
                     <form>
-                        <input type="button" class="btn btn-success" name="gender" value="Accomodation" onclick="onPlaceChanged(['lodging'])" /><br>
-                        <input type="button" class="btn btn-success" name="gender" value="Bars/Restaurants" onclick="onPlaceChanged(['bar', 'restaurant'])" /><br>
-                        <input type="button" class="btn btn-success" name="gender" value="Tourist Attractions" onclick="onPlaceChanged(['museum'])" /><br>
+                        <a href="#map"><input type="button" class="btn btn-success" name="gender" value="Accomodation" onclick="onPlaceChanged(['lodging'])"/></a><br>
+                        <a href="#map"><input type="button" class="btn btn-success" name="gender" value="Bars/Restaurants" onclick="onPlaceChanged(['bar', 'restaurant'])"/></a><br>
+                        <a href="#map"><input type="button" class="btn btn-success" name="gender" value="Tourist Attractions" onclick="onPlaceChanged(['museum'])"/></a><br>
                     </form>
-                    <button id="button" type="button" class="btn btn-primary" onclick="reset()">Start Over</button>
+                    <button id="button" type="button" class="btn btn-primary text-center" onclick="reset()">Start Over</button>
                 </div>
-            </div>
-
-            <!-- points of interest -->
-
-            <section class="col-sm-4 text-center">
-                <div id="map"></div>
-            </section>
-
-            <!-- results -->
-
-            <section class="col-sm-4">
                 <div class="results">
                     <h2 class="results">Results:</h2>
                 </div>
@@ -88,7 +77,19 @@
                         </table>
                     </div>
                 </div>
+            </div>
+
+            <!-- points of interest -->
+
+            <section class="col-sm-8 text-center">
+                <div id="map"></div>
             </section>
+
+            <!-- results -->
+
+            <!--<section class="col-sm-4">-->
+                
+            <!--</section>-->
         </div>
     </article>
 
@@ -97,7 +98,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                
+                <a href="#main-header"><button id="poi-return" type="button" class="btn btn-success">Back to Points of Interest</button></a>
             </div>
         </div>
     </div>
