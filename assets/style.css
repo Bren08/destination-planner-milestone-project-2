@@ -143,11 +143,7 @@ table {
     text-align: center;
 }
 
-@media (max-width: 375px) {
-    #map {
-        height: 50vh;
-    }
-}
+/* commit the css code here to github as too late last night to do it */
 
 @media (min-width: 992px) {
     form {
