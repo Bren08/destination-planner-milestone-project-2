@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css" type="text/css" />
-    <script type="text/javascript" src="assets/maps.js"></script>
+    <script src="assets/maps.js"></script>
 </head>
 
 <body>
@@ -33,21 +33,34 @@
                 <div class="cityselection">
                     <input id="autocomplete" placeholder="Enter a city" type="text" />
                 </div>
+
+                <!-- points of interest -->
+
                 <h2 class="poi">Points of Interest:</h2>
                 <div id="poibuttons">
                     <form>
-                        <a href="#map"><input type="button" class="btn btn-success" name="gender" value="Accomodation" onclick="onPlaceChanged(['lodging'])"/></a><br>
-                        <a href="#map"><input type="button" class="btn btn-success" name="gender" value="Bars/Restaurants" onclick="onPlaceChanged(['bar', 'restaurant'])"/></a><br>
-                        <a href="#map"><input type="button" class="btn btn-success" name="gender" value="Tourist Attractions" onclick="onPlaceChanged(['museum'])"/></a><br>
+                        <a href="#map">
+                            <div class="btn btn-success" onclick="onPlaceChanged(['lodging'])">Accomodation</div>
+                        </a><br>
+                        <a href="#map">
+                            <div class="btn btn-success" onclick="onPlaceChanged(['bar', 'restaurant'])">Bars/Restaurants</div>
+                        </a><br>
+                        <a href="#map">
+                            <div class="btn btn-success" onclick="onPlaceChanged(['museum'])">Tourist Attractions</div>
+                        </a><br>
                     </form>
-                    <button id="button" type="button" class="btn btn-primary text-center" onclick="reset()">Start Over</button>
+                    <div id="button" class="btn btn-primary text-center" onclick="reset()">Start Over</div>
                 </div>
+
+                <!-- results section-->
+
                 <div class="results">
                     <h2 class="results">Results:</h2>
                 </div>
                 <div id="resultsdropdown"></div>
                 <div id="listing">
-                    <a href="#map"><table id="resultsTable"></a>
+                    <table id="resultsTable">
+
                         <tbody id="results"></tbody>
                     </table>
                 </div>
@@ -79,26 +92,22 @@
                 </div>
             </div>
 
-            <!-- points of interest -->
+            <!-- map -->
 
-            <section class="col-sm-8 text-center">
+            <div class="col-sm-8 text-center">
                 <div id="map"></div>
-            </section>
-
-            <!-- results -->
-
-            <!--<section class="col-sm-4">-->
-                
-            <!--</section>-->
+            </div>
         </div>
     </article>
 
-    <!-- map container -->
+    <!-- POI return button -->
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <a href="#main-header"><button id="poi-return" type="button" class="btn btn-success">Back to Points of Interest</button></a>
+                <a href="#main-header">
+                    <div id="poi-return" class="btn btn-success">Back to Points of Interest</div>
+                </a>
             </div>
         </div>
     </div>
