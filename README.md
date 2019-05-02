@@ -10,6 +10,8 @@ The three options included are, Accommodation, Bars/Restaurants and Tourist Attr
 
 ## UX
 
+Firstly, I would like to direct you to the UX directory above where you will find the Strategy, Scope, Structure and Skeleton (wireframes).
+
 This web page is for any user who would like a vibrant, interactive page to decide on which city they would like to visit or explore on their next holiday. 
 The web page is informative and straight to the point and the layout I feel gives the best view the user could hope for.<br> The layout
 is such where every option you can choose is readily accessible. The functional area on the left I have used an autocomplete text box to search for a city name, which displays each and every city. You just
