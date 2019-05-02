@@ -58,10 +58,23 @@ When a result is chosen it is highlighted on the map and it shows the relevant i
 After choosing your city each button works as it should, each points of interest button with labels of Accommodation, Bars/Restaurants & Tourist Attractions when pressed takes you to the populated map.<br>
 Once the Start Over button is clicked it restarts the whole search process for the next city, it also clears the results area, the map & it's location tags.<br>
 
+Furthermore, I have used W3C Code Validator https://validator.w3.org/nu/ to verify there are no errors in my HTML and CSS. I have tried to keep the code as semantic as possible too.
+I have yet to test the site out on any other browser other than Google Chrome and Android, so it has not been tested on Edge, Safari or IOS.
+
 ## Deployment 
 
 I deployed the project using Github pages and the link to the website is: https://bren08.github.io/destination-planner-milestone-project-2/ <br>
 
 I built the web page with a view to give the end user the best possible user experience. I made the map as big as possible without compromising on the functional area where the Points of Interest are located.<br>
 The buttons are well highlighted and easily navigated and I also wanted to distinguish between the Points of Interest buttons and the Start Over button, so there is no confusion for the end user as to what button does what.<br>
-A return button was added to the bottom of the page for mobile viewports to return to the Points of Interest area as the scroll function is required on mobile devices. This function returns the user to the top of the page without scrolling, if that is what their preference is. 
+A return button was added to the bottom of the page for mobile viewports to return to the Points of Interest area as the scroll function is required on mobile devices. This function returns the user to the top of the page without scrolling, if that is what their preference is.
+
+## Credits
+
+#### Contents:
+
+The map was taken from Google Maps Javascript API: https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch
+
+## Acknowledgements:
+
+I would like to thank the good members of Code Institute Slack channel for their help and advice and finally my tutors & my mentor who steered me in the right direction.
